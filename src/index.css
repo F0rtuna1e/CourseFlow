@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* React DatePicker Styles */
+.react-datepicker {
+  @apply bg-white border border-gray-200 rounded-lg shadow-lg;
+}
+
+.react-datepicker__header {
+  @apply bg-violet-50 border-b border-gray-200 rounded-t-lg;
+}
+
+.react-datepicker__current-month {
+  @apply text-gray-900 font-semibold py-2;
+}
+
+.react-datepicker__day {
+  @apply text-gray-700 hover:bg-violet-100 rounded-full;
+}
+
+.react-datepicker__day--selected {
+  @apply bg-violet-600 text-white hover:bg-violet-700;
+}
+
+.react-datepicker__day--keyboard-selected {
+  @apply bg-violet-200 text-violet-900;
+}
+
+.react-datepicker__navigation {
+  @apply top-2;
+}
+
+.react-datepicker__day-name {
+  @apply text-gray-600;
+}
+
+/* FullCalendar Styles */
+.fc {
+  @apply font-sans;
+}
+
+.fc .fc-toolbar-title {
+  @apply text-gray-900 font-semibold;
+}
+
+.fc .fc-button {
+  @apply bg-violet-600 border-violet-600 hover:bg-violet-700 hover:border-violet-700 focus:ring-violet-500;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  @apply bg-violet-700 border-violet-700;
+}
+
+.fc .fc-daygrid-day-number {
+  @apply text-gray-700;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  @apply bg-violet-50;
+}
+
+.fc .fc-event {
+  @apply cursor-pointer;
+}
